@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('pic.bkr.nm.png') no-repeat center center;
+    font-family: orbitron, sans-serif;
+    font-size: larger;color: #180141;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 850px;
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(167, 116, 230, 0.891);
+    background-color: #ebdbfd99;
+    border: 1rem solid #31056e;
+    border-radius: 10px;
+}
+
+.previous_guesses {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.score_board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn_again {
+    background-color: #5e36e2;
+    color: rgb(222, 207, 255);
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: absolute; 
+    top: 20px; 
+    right: 20px;
+    transition: background 0.3s ease;
+}
+
+.btn_again:hover {
+    background-color: #370779;
+}
+.container h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;   
+}
+.container_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.container_wrapper p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.container .btn{
+    border:dashed rgb(78, 37, 192);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    outline: rgb(49, 12, 163);
+    font-size: 0.9rem;
+    background-color: rgb(205, 187, 252);
+    border-radius: 4px;
+    color: rgb(35, 6, 117);
+    font-family: orbitron, sans-serif;
+}
+.container .btn_again, .btn_check:focus{
+    transform: scale(0.98);
+    outline: none;
+}
+
+.hide_num {
+    background-color: rgb(49, 12, 163);
+    width: 80px;
+    height: 80px;
+    line-height: 80px; 
+    border: 3px solid rgb(49, 12, 163);
+    color: rgb(236, 225, 250);
+    border-radius: 10px;
+    margin: 0 auto; 
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(49, 12, 163, 0.5);
+}
+
+.message{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+}
+
+.number_data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+.number_data input{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid rgb(166, 139, 234);   
+}
+.number_data .btn_check{
+    border: dashed rgb(78, 37, 192);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    outline: rgb(49, 12, 163);
+    font-size: 0.9rem;
+    background-color: rgb(205, 187, 252);
+    border-radius: 4px;
+    color: rgb(35, 6, 117);
+    font-family: orbitron, sans-serif;
+}
+.content{
+    font-size: 1.2rem;
+}

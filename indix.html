@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+       <div class="container_wrapper">
+       <button class="btm btn_again" id="againBtn" style="display:none;">Play Again</button>
+       <h1>Guess My Number! 🤔</h1>
+       <p>Between 1 and 100</p>
+
+       </div>
+      <p class="hide_num" id="secretNumber">?</p>
+      <p class="message" id="message">Start guessing...</p>
+
+      <div class="previous_guesses">
+        <h3>Previous guesses:</h3>
+        <ul class="history" id="history"></ul>
+      </div>
+    
+       <div class="number_data">
+        <form onsubmit="return false;">
+            <label for="guessInput">Your Guess:</label>
+            <input type="number" min="1" max="100" required placeholder="Enter your lucky number!" class="input_number" id="guessInput">
+            <button type="button" class="btn btn_check" id="checkBtn">Check Now!</button>
+        </form>
+    
+        <div class="content">
+            <p>Attempts: <span class="attempts" id="attempts">0</span></p>
+            <p>High Score: <span class="high_score" id="highScore">0</span></p>
+            <ul class="history" id="history"></ul>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
